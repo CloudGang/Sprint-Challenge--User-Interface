@@ -24,13 +24,15 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
+/* index/about comp */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
 	line-height: 1;
-}
+    background:white;
+ }
 ol, ul {
 	list-style: none;
 }
@@ -71,6 +73,39 @@ p {
     margin: 0 auto;
 }
 
+header {
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav button {
+    border: transparent;
+    background: transparent;
+}
+
+header nav a {
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+     
+header nav a:hover {
+        background-color: black;
+        color: white;
+      }
+
+.img {
+    margin: 30px 0;
+}
+  
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -95,6 +130,7 @@ p {
     margin-bottom: 0;
 }
 
+/* index boxes */
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
@@ -112,7 +148,48 @@ p {
     justify-content: center;
 }
 
-.bottom-content {
+.index .boxes .box1 {
+    background-color: teal;
+  }
+  
+.index .boxes .box2 {
+    background-color: gold;
+  }
+  
+.index .boxes .box3 {
+    background-color: cadetblue;
+  }
+  
+.index .boxes .box4 {
+    background-color: coral;
+  }
+  
+.index .boxes .box5 {
+    background-color: crimson;
+  }
+  
+.index .boxes .box6 {
+    background-color: forestgreen;
+  }
+  
+.index .boxes .box7 {
+    background-color: darkorchid;
+  }
+  
+.index .boxes .box8 {
+    background-color: hotpink;
+  }
+  
+.index .boxes .box9 {
+    background-color: indigo;
+  }
+  
+.index .boxes .box10 {
+    background-color: dodgerblue;
+  }
+ /* end boxes */
+
+ .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
@@ -129,6 +206,7 @@ p {
 footer {
     width: 100%;
     background: black;
+    border-bottom: 50px solid #000000;
 }
 
 footer nav {
@@ -143,4 +221,101 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+footer nav a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* about */
+.about-page .top-content .text-container {
+    width: 100%;
+    padding: 0 1%;
+    padding-bottom: 20px;  
+  }
+  
+  .about-page .content-boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .about-page .content-box {
+    width: 350px;
+    margin: 25px;
+    border-bottom: 1px dashed black;
+  }
+  
+  .about-page .content-box h2 {
+    margin-top: 15px;
+  }
+  
+  .about-page .content-box button {
+    margin: 20px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 7px 20px;
+  }
+
+/* Queries */
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+ 
+/* Portrait */
+ 
+@media only screen
+ 
+and (min-device-width: 375px)
+ 
+and (max-device-width: 667px)
+ 
+and (-webkit-min-device-pixel-ratio: 2)
+ 
+and (orientation: portrait) {
+ 
+}
+ 
+/* Landscape */
+ 
+@media only screen
+ 
+and (min-device-width: 375px)
+ 
+and (max-device-width: 667px)
+ 
+and (-webkit-min-device-pixel-ratio: 2)
+ 
+and (orientation: landscape) {
+ 
+}
+ 
+/* ----------- Google Pixel ----------- */
+ 
+/* Portrait */
+ 
+@media screen
+ 
+and (device-width: 360px)
+ 
+and (device-height: 640px)
+ 
+and (-webkit-device-pixel-ratio: 3)
+ 
+and (orientation: portrait) {
+ 
+}
+ 
+/* Landscape */
+ 
+@media screen
+ 
+and (device-width: 360px)
+ 
+and (device-height: 640px)
+ 
+and (-webkit-device-pixel-ratio: 3)
+ 
+and (orientation: landscape) {
+ 
 }
